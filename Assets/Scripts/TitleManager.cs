@@ -57,7 +57,7 @@ public class TitleManager : MonoBehaviour
 
     void LoadSetting()
     {
-        if (!PlayerPrefs.HasKey("BGM"))
+        if (!PlayerPrefs.HasKey("Sensitivity"))
             return;
 
         float sensitivity = PlayerPrefs.GetFloat("Sensitivity");

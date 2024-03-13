@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool paused;
     public bool option;
 
+    public int windowMode;
     public bool clear;
 
     public Slider BGMSlider;
@@ -68,12 +69,12 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetFloat("Sensitivity", SensitivitySlider.value);
         PlayerPrefs.SetFloat("BGM", BGMSlider.value);
         PlayerPrefs.SetFloat("SE", SESlider.value);
-        PlayerPrefs.SetInt("Windowed", TitleManager.instance.windowMode);
+        PlayerPrefs.SetInt("Windowed", windowMode);
     }
 
     void LoadSetting()
     {
-        if (!PlayerPrefs.HasKey("BGM"))
+        if (!PlayerPrefs.HasKey("Sensitivity"))
             return;
 
         float sensitivity = PlayerPrefs.GetFloat("Sensitivity");
@@ -84,7 +85,7 @@ public class GameManager : MonoBehaviour
         SensitivitySlider.value = sensitivity;
         BGMSlider.value = bgm;
         SESlider.value = se;
-        TitleManager.instance.windowMode = windowed;
+        windowMode = windowed;
     }
 
     void InputManager()
@@ -131,7 +132,21 @@ public class GameManager : MonoBehaviour
         pausedCanvas.SetActive(false);
         optionCanvas.SetActive(true);
     }
-    
+
+    public void SetWindow()
+    {
+        if (windowMode == 1)
+        {
+            windowMode = 0;
+            Screen.SetResolution(1920, 1080, true);
+        }
+        else
+        {
+            windowMode = 1;
+            Screen.SetResolution(1280, 720, false);
+        }
+    }
+
     public void OptionExit()
     {
         option = false;

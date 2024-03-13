@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     public Slider BGMSlider;
     public Slider SESlider;
+    public Slider SensitivitySlider;
 
     public GameObject pausedCanvas;
     public GameObject optionCanvas;
@@ -64,6 +65,7 @@ public class GameManager : MonoBehaviour
 
     void SaveSetting()
     {
+        PlayerPrefs.SetFloat("Sensitivity", SensitivitySlider.value);
         PlayerPrefs.SetFloat("BGM", BGMSlider.value);
         PlayerPrefs.SetFloat("SE", SESlider.value);
         PlayerPrefs.SetInt("Windowed", TitleManager.instance.windowMode);
@@ -74,10 +76,12 @@ public class GameManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("BGM"))
             return;
 
+        float sensitivity = PlayerPrefs.GetFloat("Sensitivity");
         float bgm = PlayerPrefs.GetFloat("BGM");
         float se = PlayerPrefs.GetFloat("SE");
         int windowed = PlayerPrefs.GetInt("Windowed");
 
+        SensitivitySlider.value = sensitivity;
         BGMSlider.value = bgm;
         SESlider.value = se;
         TitleManager.instance.windowMode = windowed;

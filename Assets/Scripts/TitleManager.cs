@@ -7,6 +7,7 @@ public class TitleManager : MonoBehaviour
     public bool option;
     public int windowMode;
 
+    public Slider SensitivitySlider;
     public Slider BGMSlider;
     public Slider SESlider;
 
@@ -48,6 +49,7 @@ public class TitleManager : MonoBehaviour
 
     void SaveSetting()
     {
+        PlayerPrefs.SetFloat("Sensitivity", SensitivitySlider.value);
         PlayerPrefs.SetFloat("BGM", BGMSlider.value);
         PlayerPrefs.SetFloat("SE", SESlider.value);
         PlayerPrefs.SetInt("Windowed", windowMode);
@@ -58,10 +60,12 @@ public class TitleManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("BGM"))
             return;
 
+        float sensitivity = PlayerPrefs.GetFloat("Sensitivity");
         float bgm = PlayerPrefs.GetFloat("BGM");
         float se = PlayerPrefs.GetFloat("SE");
         int windowed = PlayerPrefs.GetInt("Windowed");
 
+        SensitivitySlider.value = sensitivity;
         BGMSlider.value = bgm;
         SESlider.value = se;
         windowMode = windowed;

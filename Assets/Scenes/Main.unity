@@ -1989,7 +1989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0717157143d7e34a8f130695ef5d7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 8
+  type: 9
 --- !u!1 &212556550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3582,7 +3582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0717157143d7e34a8f130695ef5d7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 8
+  type: 9
 --- !u!114 &365944579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3877,6 +3877,44 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1424200115404124385, guid: f222748f1796b2e49a56a2fbf7563247, type: 3}
+--- !u!84 &437053999
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 257
+  m_Height: 257
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &438886446
 GameObject:
   m_ObjectHideFlags: 0
@@ -5791,7 +5829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0717157143d7e34a8f130695ef5d7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 5
+  type: 6
 --- !u!84 &1157652371
 RenderTexture:
   m_ObjectHideFlags: 0
@@ -6070,7 +6108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0717157143d7e34a8f130695ef5d7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 8
+  type: 9
 --- !u!114 &1237869963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6268,7 +6306,7 @@ PrefabInstance:
     - target: {fileID: 2057960, guid: 98e2b8a7d6de642f8ae08a3cbb957b7a, type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1415138629}
+      objectReference: {fileID: 437053999}
     - target: {fileID: 2057960, guid: 98e2b8a7d6de642f8ae08a3cbb957b7a, type: 3}
       propertyPath: orthographic size
       value: 15
@@ -6541,44 +6579,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332491642}
   m_CullTransparentMesh: 1
---- !u!84 &1415138629
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 257
-  m_Height: 257
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1001 &1415651937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6648,44 +6648,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ec966d90911a454c9760fa28789a4f8, type: 3}
---- !u!84 &1426382846
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 5
-  m_Width: 257
-  m_Height: 257
-  m_AntiAliasing: 1
-  m_MipCount: -1
-  m_DepthStencilFormat: 94
-  m_ColorFormat: 8
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_EnableCompatibleFormat: 1
-  m_EnableRandomWrite: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
-  m_ShadowSamplingMode: 2
 --- !u!1001 &1445283393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7985,6 +7947,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93bc4d75f9abdc948ad60043fbc45353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!84 &1738207371
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 5
+  m_Width: 257
+  m_Height: 257
+  m_AntiAliasing: 1
+  m_MipCount: -1
+  m_DepthStencilFormat: 94
+  m_ColorFormat: 8
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_EnableCompatibleFormat: 1
+  m_EnableRandomWrite: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
+  m_ShadowSamplingMode: 2
 --- !u!1 &1743201107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1972450619686661696, guid: 62f6191494f161340b448c5f6a7f56d8, type: 3}
@@ -9448,7 +9448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0717157143d7e34a8f130695ef5d7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 6
+  type: 7
 --- !u!1 &2105819179
 GameObject:
   m_ObjectHideFlags: 0
@@ -11182,7 +11182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0717157143d7e34a8f130695ef5d7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 7
+  type: 8
 --- !u!222 &6648784238251167138
 CanvasRenderer:
   m_ObjectHideFlags: 0

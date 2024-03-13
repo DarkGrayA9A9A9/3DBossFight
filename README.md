@@ -14,4 +14,4 @@ TPS, 액션 RPG
 
 # 다운로드 링크
 
-[게임 다운로드](https://drive.google.com/file/d/1CZcht9_udXla0Pt4l1XXsq90SaQzJsPd/view?usp=sharing)
+[게임 다운로드](https://drive.google.com/file/d/1hTdiblHexHgpgYOgF6N0AnFyZwfFhank/view?usp=sharing)

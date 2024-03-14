@@ -15,10 +15,15 @@ TPS, 액션 RPG
 # 조작법
 
 이동 : wasd
+
 점프 : Space
+
 달리기 : Left Shift
+
 공격 : Left Mouse
+
 회피기동 : Right Mouse
+
 일시정지 메뉴 : ESC
 
 # 다운로드 링크

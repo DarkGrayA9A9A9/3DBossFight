@@ -223,13 +223,4 @@ public class Boss : MonoBehaviour
             StartCoroutine(Hit());
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player") && jumpAttacking && !PlayerController.instance.hit && !PlayerController.instance.sliding && !PlayerController.instance.die)
-        {
-            StartCoroutine(PlayerController.instance.Hit());
-            PlayerStatus.instance.Hit(jumpAttack);
-        }
-    }
 }

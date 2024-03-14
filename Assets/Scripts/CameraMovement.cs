@@ -35,8 +35,8 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rotX += -(Input.GetAxis("Mouse Y")) * sensitivity * Time.deltaTime;
-        rotY += Input.GetAxis("Mouse X") * sensitivity * Time.deltaTime;
+        rotX += -(Input.GetAxis("Mouse Y")) * sensitivity * GameManager.instance.SensitivitySlider.value * Time.deltaTime;
+        rotY += Input.GetAxis("Mouse X") * sensitivity * GameManager.instance.SensitivitySlider.value * Time.deltaTime;
 
         rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
         Quaternion rot = Quaternion.Euler(rotX, rotY, 0);

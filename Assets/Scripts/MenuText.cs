@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class MenuText : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    public enum Type { Start, Option, Exit, GoBack, WindowMode, Resume, PausedOption, PausedOptionExit, GoTitle }
+    public enum Type { Start, Option, Exit, GoBack, WindowMode, WindowModeInGame, Resume, PausedOption, PausedOptionExit, GoTitle }
     public Type type;
 
     Text text;
@@ -46,6 +46,9 @@ public class MenuText : MonoBehaviour, IPointerClickHandler, IPointerEnterHandle
                 break;
             case Type.WindowMode:
                 TitleManager.instance.SetWindow();
+                break;
+            case Type.WindowModeInGame:
+                GameManager.instance.SetWindow();
                 break;
             case Type.Resume:
                 GameManager.instance.PausedMenuExit();

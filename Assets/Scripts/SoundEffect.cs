@@ -69,6 +69,6 @@ public class SoundEffect : MonoBehaviour
 
     public void BossJumpAttack()
     {
-        audio.PlayOneShot(bossJumpAttack, audio.volume * 0.95f);
+        audio.PlayOneShot(bossJumpAttack, audio.volume);
     }
 }

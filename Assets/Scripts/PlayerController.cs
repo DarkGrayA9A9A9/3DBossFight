@@ -174,13 +174,13 @@ public class PlayerController : MonoBehaviour
         if (lastAttack > attackInit)
             attackCombo = false;
 
-        if (Input.GetButtonDown("Jump") && lastJump > jumpDelay && landing)
+        if (Input.GetButtonDown("Jump") && lastJump > jumpDelay && landing && !sliding && !attacking)
             Jump();
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !attacking && landing)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !attacking && landing && !sliding)
             StartCoroutine(Attack());
 
-        if (Input.GetKeyDown(KeyCode.Mouse1) && !sliding && PlayerStatus.instance.currentStamina > PlayerStatus.instance.slideCost)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && !sliding && PlayerStatus.instance.currentStamina > PlayerStatus.instance.slideCost && !jumping && landing)
             StartCoroutine(Slide());
     }
 
